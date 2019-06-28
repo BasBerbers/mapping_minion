@@ -8,11 +8,11 @@ FASTQ= /fullpath/to/file2.fastq
 
 # index the fasta file
 
-#bwa index $FASTA
+# bwa index $FASTA
 
 # mapping,-x ont2d allows for mapping with reads that have a high error rate (not as precise as with other reads)
 
-#bwa mem -x ont2d -t 24 $FASTA $FASTQ > aln.sam
+# bwa mem -x ont2d -t 24 $FASTA $FASTQ > aln.sam
 minimap2 -a $FASTA $FASTQ > aln.sam
 
 # convert sam file to bam
