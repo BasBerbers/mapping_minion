@@ -13,6 +13,7 @@ bwa index $FASTA
 # mapping,-x ont2d allows for mapping with reads that have a high error rate (not as precise as with other reads)
 
 bwa mem -x ont2d -t 24 $FASTA $FASTQ > aln.sam
+# minimap2 -a ref.fa query.fq > alignment.sam
 
 # convert sam file to bam
 
