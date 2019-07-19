@@ -29,3 +29,7 @@ samtools index aln.sorted.bam aln.sorted.bai -@ 24
 
 # aln.sorted.bam and aln.sorted.bai should be used to visualize mapping on IGV
 # example --> java -jar /fullpath/to/igv.jar
+
+# remove sam file
+
+rm aln.sam
